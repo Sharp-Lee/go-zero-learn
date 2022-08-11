@@ -1,0 +1,12 @@
+Name: user-api
+Host: 0.0.0.0
+Port: 8888
+Mysql:
+  DataSource: root:wukongmysql@tcp(127.0.0.1:3306)/book?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+CacheRedis:
+  - Host: 127.0.0.1:6379
+    Pass: wukongredis
+    Type: node
+Auth:
+  AccessSecret: e0e1b5e4-99c8-4d1b-bf2a-c5bcb1642b7f
+  AccessExpire: 600
